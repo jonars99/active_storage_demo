@@ -6,9 +6,9 @@ var postImage = function (image) {
   var newRequest = {
     type: 'POST',
     url: 'memories',
-    cache: false,
-    contentType: false,
-    processData: false,
+    cache: false, // see https://api.jquery.com/jquery.ajax/
+    contentType: false,  // see https://api.jquery.com/jquery.ajax/
+    processData: false, // see https://api.jquery.com/jquery.ajax/
     xhrFields: { 'withCredentials': true },
     data: formData,
     success: function(response){
